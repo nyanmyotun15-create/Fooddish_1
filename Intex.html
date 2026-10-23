@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLUE MOON</title>
+    <style>
+        * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+        }
+
+        body {
+            background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.85)), 
+                        url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1920') center/cover fixed;
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        nav {
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center;
+            padding: 20px 8%; background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(15px); 
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .logo { 
+            font-size: 26px; 
+            font-weight: bold; 
+            color: #f97316; 
+            letter-spacing: 1px;
+             }
+             .active:hover{
+                color: white;
+             }
+        .menu a {
+            color: #fff;
+            margin-left: 30px;
+            font-size: 15px; 
+            transition: 0.3s;
+        }
+        .menu a:hover { 
+            color: red; 
+        }
+
+        .hero {
+            flex: 1; 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center;
+            padding: 0 10%; 
+            max-width: 900px;
+        }
+        .hero h1 { 
+            font-size: 4.5rem; 
+            line-height: 1.1; 
+            margin-bottom: 20px;
+             }
+        .hero h1 span { 
+            color: #f97316; 
+            text-shadow: 0 0 20px rgba(249, 115, 22, 0.5);
+             }
+        .hero p { 
+            font-size: 1.2rem; 
+            color: #ccc; 
+            margin-bottom: 40px; 
+            max-width: 500px; 
+            line-height: 1.6;
+             }
+        
+        .btn {
+            background: #f97316; 
+            color: white; 
+            padding: 15px 35px; 
+            border-radius: 50px;
+            text-decoration: none; 
+            font-weight: bold; 
+            font-size: 16px; 
+            width: fit-content;
+            transition: 0.3s; 
+            box-shadow: 0 10px 20px rgba(249, 115, 22, 0.3);
+        }
+        .btn:hover { 
+            background: #ea580c; 
+            transform: translateY(-3px);
+         }
+         .footer{
+            text-align: center;
+         }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">🍜Blue Moon</div>
+        <div class="menu">
+            <a href="home.html" >Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="about.html">About</a>
+            <a href="promotion.html">Promotion</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html"class="active">Login/out</a>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <h1>Great Food, <br><span>Delivered Fast.</span></h1>
+        <p>Your favorite Filipino fiesta meals, hot and fresh, delivered right to your doorstep. Perfect for every celebration.</p>
+        <a href="menu.html" class="btn">Explore Menu</a>
+    </div>
+    <div class="footer">
+        Blue Moon Food Order</div>
+    </div>
+
+</body>
+</html>

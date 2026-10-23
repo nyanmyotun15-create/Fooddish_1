@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu - Blue Moon</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff8f0;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 40px;
+      background: #fff;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .logo { font-size: 22px; font-weight: bold; color: #f97316; }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover, nav a.active { color: #e63946; }
+
+    .page {
+      text-align: center;
+      padding: 60px 20px;
+      background: #e63946;
+      color: #fff;
+    }
+
+    .page h1 { font-size: 36px; margin-bottom: 10px; }
+    .page p { font-size: 1.1rem; }
+
+    .menu {
+      padding: 50px 40px;
+      text-align: center;
+    }
+
+    .menu h2 {
+      font-size: 26px;
+      margin: 20px 0 25px;
+      color: #e63946;
+      border-bottom: 3px solid #f97316;
+      display: inline-block;
+      padding-bottom: 6px;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    .card {
+      background: #f0ffff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      width: 230px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 12px;
+      background: #ddd;
+    }
+
+    .card h3 { margin-bottom: 6px; font-size: 18px; }
+    .card p { color: #666; font-size: 13px; }
+
+    .price {
+      display: block;
+      color: #e63946;
+      font-weight: bold;
+      font-size: 17px;
+      margin-top: 8px;
+    }
+
+    .order-btn {
+      margin-top: auto;
+      background: #f97316;
+      color: #fff;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 30px;
+      font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .order-btn:hover { background: #ea580c; }
+
+    .footer {
+      background: #222;
+      color: #ddd;
+      text-align: center;
+      padding: 25px;
+      margin-top: 40px;
+    }
+
+    .footer a {
+      color: #f97316;
+      text-decoration: none;
+    }
+
+    .footer a:hover { text-decoration: underline; }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        gap: 10px;
+        padding: 16px 5%;
+      }
+
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+      }
+
+      nav a { margin-left: 0; font-size: 14px; }
+
+      .page h1 { font-size: 28px; }
+
+      .menu { padding: 30px 15px; }
+
+      .card { width: 160px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">🍜 Blue Moon</div>
+    <nav>
+      <a href="Intex.html">Home</a>
+      <a href="menu.html" class="active">Menu</a>
+      <a href="about.html">About</a>
+      <a href="promotion.html">Promotion</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html">Login/out</a>
+    </nav>
+  </header>
+
+  <!-- Page Banner -->
+  <section class="page">
+    <h1>Shop Menu</h1>
+    <p>Myanmar Traditional Foods</p>
+  </section>
+  <section class="menu">
+    <h2>🍜 Myanmar Food Menu</h2>
+    <div class="cards">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1555126634-323283e090fa?w=400" alt="Mont Hin Gar">
+        <h3>Mont Hin Gar</h3>
+        <p>Price</p>
+        <span class="price">3,500 Ks</span>
+        <button class="order-btn">Order Now</button>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=400" alt="Shan Noodle">
+        <h3>Shan Noodle</h3>
+        <p>Price</p>
+        <span class="price">4,000 Ks</span>
+        <button class="order-btn">Order Now</button>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?w=400" alt="Chicken Rice">
+        <h3>Chicken Rice</h3>
+        <p>Price</p>
+        <span class="price">4,900 Ks</span>
+        <button class="order-btn">Order Now</button>
+      </div>
+
+      <div class="card">
+        <img src="Website/f7.jpg" alt="Oil Rice">
+        <h3>Oil Rice</h3>
+        <p>Price</p>
+        <span class="price">4,600 Ks</span>
+        <button class="order-btn">Order Now</button>
+      </div>
+
+      <div class="card">
+        <img src="Webside/N.jpg" alt="Nan Gyi Thoke">
+        <h3>Nan Gyi Thoke</h3>
+        <p>Price</p>
+        <span class="price">3,800 Ks</span>
+        <button class="order-btn">Order Now</button>
+      </div>
+
+      <div class="card">
+        <img src="Webside/M.jpg" alt="Mohinga">
+        <h3>Mohinga</h3>
+        <p>Price</p>
+        <span class="price">5,500 Ks</span>
+        <button class="order-btn">Order Now</button>
+      </div>
+
+      <div class="card">
+        <img src="Webside/Wo.jpg" alt="Fried Rice">
+        <h3>Fried Rice</h3>
+        <p>Price</p>
+        <span class="price">6,800 Ks</span>
+        <button class="order-btn">Order Now</button>
+      </div>
+
+      <div class="card">
+        <img src="Webside/Wow.jpg" alt="Curry">
+        <h3>Burmese Curry</h3>
+        <p>Price</p>
+        <span class="price">4,800 Ks</span>
+        <button class="order-btn">Order Now</button>
+      </div>
+
+      <div class="card">
+        <img src="Webside/W.jpg" alt="Noodle Salad">
+        <h3>Noodle Salad</h3>
+        <p>Price</p>
+        <span class="price">3,500 Ks</span>
+        <button class="order-btn">Order Now</button>
+      </div>
+
+      <div class="card">
+        <img src="Webside/T.jpg" alt="Tea Leaf Salad">
+        <h3>Tea Leaf Salad</h3>
+        <p>Price</p>
+        <span class="price">3,500 Ks</span>
+        <button class="order-btn">Order Now</button>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="menu">
+    <h2>🍩 Snacks</h2>
+    <div class="cards">
+
+      <div class="card">
+        <img src="Website/f2.jpg" alt="Burger">
+        <h3>Burger</h3>
+        <p>Price</p>
+        <span class="price">2,500 Ks</span>
+        <button class="order-btn">Order Now</button>
+      </div>
+
+      <div class="card">
+        <img src="Website/f3.jpg" alt="Sushi">
+        <h3>Sushi</h3>
+        <p>Price</p>
+        <span class="price">3,500 Ks</span>
+        <button class="order-btn">Order Now</button>
+      </div>
+
+      <div class="card">
+        <img src="Website/f1.jpg" alt="Ice-cream">
+        <h3>Ice-cream</h3>
+        <p>Price</p>
+        <span class="price">3,000 Ks</span>
+        <button class="order-btn">Order Now</button>
+      </div>
+
+      <div class="card">
+        <img src="Website/f4.jpg" alt="Lotte">
+        <h3>Lotte</h3>
+        <p>Price</p>
+        <span class="price">4,000 Ks</span>
+        <button class="order-btn">Order Now</button>
+      </div>
+
+      <div class="card">
+        <img src="Website/f5.jpg" alt="Pizza">
+        <h3>Pizza</h3>
+        <p>Price</p>
+        <span class="price">5,000 Ks</span>
+        <button class="order-btn">Order Now</button>
+      </div>
+      <div class="card">
+        <img src="Website/i5.webp" alt="Black Tea">
+        <h3>Black Tea</h3>
+        <p>Price</p>
+        <span class="price">4,800 Ks</span>
+        <button class="order-btn">Order Now</button>
+      </div>
+
+      <div class="card">
+        <img src="Website/jj.webp" alt="Cocktail">
+        <h3>Cocktail</h3>
+        <p>Price</p>
+        <span class="price">4,200 Ks</span>
+        <button class="order-btn">Order Now</button>
+      </div>
+
+      <div class="card">
+        <img src="Website/ij.webp" alt="Maple Syrup">
+        <h3>Maple Syrup</h3>
+        <p>Price</p>
+        <span class="price">3,500 Ks</span>
+        <button class="order-btn">Order Now</button>
+      </div>
+
+      <div class="card">
+        <img src="Website/ii.webp" alt="Charming Basket">
+        <h3>Charming Basket</h3>
+        <p>Price</p>
+        <span class="price">6,000 Ks</span>
+        <button class="order-btn">Order Now</button>
+      </div>
+
+      <div class="card">
+        <img src="Website/li.webp" alt="Hummus and Pomegranate">
+        <h3>Hummus and Pomegranate</h3>
+        <p>Price</p>
+        <span class="price">7,200 Ks</span>
+        <button class="order-btn">Order Now</button>
+      </div>
+
+    </div>
+  </section>
+  <div class="footer">
+    <p>Blue Moon Food Order<br>
+    <a href="mailto:BlueMoon@example.com">BlueMoon@example.com</a></p>
+  </div>
+
+</body>
+</html>

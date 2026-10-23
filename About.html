@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Handaan Express</title>
+    <style>
+        * { margin: 0; 
+            padding: 0; 
+            box-sizing: border-box;  
+        }
+        
+        body {
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)), 
+                        url('https://images.unsplash.com/photo-1556910103-1c02745aae4d?q=80&w=1920') center/cover fixed;
+            color: white; 
+        }
+
+        nav {
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center;
+            padding: 20px 8%; 
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(15px); 
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .logo { font-size: 26px; 
+            font-weight: bold; 
+            color: #f97316; }
+        .menu a { color: #fff; 
+            text-decoration: none; 
+            margin-left: 30px;
+             }
+        .menu a:hover { 
+            color: red; 
+        }
+   
+        .about-section {
+            display: flex; align-items: center; 
+            justify-content: center;
+            min-height: calc(100vh - 80px); 
+            padding: 50px 8%; 
+            gap: 50px; 
+        }
+        
+       
+        .about-text {
+            flex: 1; min-width: 300px; background: rgba(0, 0, 0, 0.4);
+            padding: 40px; border-radius: 20px; 
+            border: 1px solid rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+        }
+        .about-text h1 { font-size: 3rem; 
+            margin-bottom: 20px; 
+            color: #f97316; }
+        .about-text p { font-size: 1.1rem; 
+            line-height: 1.8; 
+            color: gray; 
+            margin-bottom: 20px; }
+        
+        .about-img {
+            flex: 1; min-width: 300px; 
+            height: 450px; 
+            border-radius: 20px;
+            object-fit: cover; 
+            box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+            border: 2px solid rgba(255,255,255,0.1);
+        }
+
+        .media max-width: 768px {
+            .about-section { flex-direction: column; }
+            .about-img { width: 100%; height: 300px; }
+        }
+        footer {
+              text-align: center;
+              padding: 3px;
+              background-color: DarkSalmon;
+              color: white;
+  }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">🍜Blue Moon</div>
+        <div class="menu">
+            <a href="home.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="about.html" class="active">About</a>
+            <a href="promotion.html">Promotion</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">Login/out</a>
+        </div>
+    </nav>
+
+    <div class="about-section">
+        <div class="about-text">
+            <h1>Our Story</h1>
+            <p>Blue Moon started with a simple mission: to bring the joy of sea food to every home. We believe that every celebration, big or small, deserves a feast.</p>
+            <p>From our kitchen to your doorstep, we ensure that every dish is prepared with love, fresh ingredients, and a whole lot of passion. We are not just delivering food; we are delivering happiness.</p>
+        </div>
+        <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?q=80&w=800" alt="Chef" class="about-img">
+    </div>
+    <footer>
+     <p>Blue Moon Food Order Shop<br>
+     <a href="https://bluemoonhemp.com/">Order@BlueMoon.com</a></p>
+</footer>
+
+</body>
+</html>
